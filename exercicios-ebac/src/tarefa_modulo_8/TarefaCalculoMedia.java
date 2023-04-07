@@ -1,4 +1,4 @@
-package tarefa_calculo_media;
+package tarefa_modulo_8;
 
 public class TarefaCalculoMedia {
     public static void main(String[] args) {

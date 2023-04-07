@@ -1,4 +1,4 @@
-package tarefa_classes;
+package tarefa_modulo_7;
 
 public class Carro {
 
