@@ -6,25 +6,27 @@ public class Casting {
         long numero64bits = 64;
 
         /**
-         * Casting é quando fazemos conversao de um tipo para outro igual os de baixo.
+         * Outra maneira de casting é o explicito que é igual o exemplo abaixo
          */
-        //A linha abaixo nao executa pq um variavel de 8 bits nao consegue aceitar um tipo que tenh mais bits que ele.
-        // numero8bits = numero16bits;
-
-        //Aqui o casting é feito tranquilamente porque o numero de bits é bem maior igual ao Long que aceita esse que é 32
-        numero32Bits = numero8bits;
-
-        //Essa linha de baixo se aplica ao mesmo caso do 8 bits que nao aceita 16, igual esse que e 16 e nao aceita um 32
-        // numero16bits = numero32Bits;
-
-        //Pelo tipo ser long e long ser 64 ele consegue aceitar qualquer outro tipo abaixo dele que seja numerico.
-        numero64bits = numero32Bits;
+        int num1 = 10;
+        short num2 = (short) num1; // explicito
 
         /**
-         * Temos também como fazer casts de tipos diferentes como por exemplo String para Integer.
+         * Ele é explicito porque colocamos o (short) antes do valor que a variavel vai receber
+         * e podemos fazer casting de tipo diferentes igual o de cima mas temos um problema
+         * quando o valor é muito acima do esperado como o exemplo abaixo que preciso de um valor
+         * grande mas resolvi fazer um casting para um tipo menor, e acabo perdendo o valor.
          */
-        String numeroString = "1200";
-        int castStringNumero = Integer.getInteger(numeroString);
-        System.out.println(castStringNumero);
+        long numeroLong = 1111111111111111111l;
+        int numeroInteger = (int) numeroLong; // explicito
+        System.out.println(numeroInteger); //  734294471
+
+        /**
+         * Casting implicito é quando nao precisamos colocar (tipo) igual exemplo abaixo
+         */
+
+        long numeroLong2;
+        int numeroInt = 200;
+        numeroLong2 = numeroInt; //implicito
     }
 }
