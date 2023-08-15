@@ -22,6 +22,7 @@ public class ArrayListAluno {
         System.out.println("Sem Ordenacao");
         System.out.println(alunos);
     }
+
     public static void alunosComOrdenacao(){
         List<Aluno> alunos = new ArrayList<>();
         alunos.add(new Aluno("Josuke Kamado", "Biologia", 4));
